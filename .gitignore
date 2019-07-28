@@ -1,0 +1,11 @@
+*.pyc
+*.a
+*.aux
+*.toc
+*.bib
+*.dvi
+/build
+.sconsign.dblite
+.pydevproject
+/dist
+.ropeproject
