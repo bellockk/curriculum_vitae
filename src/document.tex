@@ -25,34 +25,147 @@
       \setlength{\parsep}{0in} \setlength{\parskip}{0in}
       \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
       \setlength{\leftmargin}{0.17in}}}{\end{list}}
-\newenvironment{list2}{
+\newenvironment{list2}{%
   \begin{list}{$\bullet$}{%
       \setlength{\itemsep}{0in}
       \setlength{\parsep}{0in} \setlength{\parskip}{0in}
       \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
-      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+  \setlength{\leftmargin}{0.2in}}}{\end{list}}
 
+% Organization Command
+\newcommand{\organization}[2] {{\bf #1}, #2\par}
+
+% Role Command
+\newcommand{\role}[2]{\vspace{-1em}\emph{#1} \hfill \textbf{#2}}
+
+% Make Section Titles Small Caps
+% \renewcommand{\section}[1]{{\sc #1}}
 
 \begin{document}
 
 \name{Kenneth E. Bellock \vspace*{.1in}}
 
 \begin{resume}
-\section{\sc Contact Information}
-\vspace{.05in}
+
+\section{\sc Contact Information}\vspace{.05in}
 \begin{tabular}{@{}p{4in}p{4in}}
-200 Serenity Point Lane   & {\it Voice:}  (717) 333-6622 \\            
-Gambrills, Maryland 21054 & {\it E-mail:}  ken@bellock.net\\         
+200 Serenity Point Lane   & \emph{Voice:}  (717) 333-6622 \\            
+Gambrills, Maryland 21054 & \emph{E-mail:}  ken@bellock.net\\         
 \end{tabular}
 
 \section{\sc Summary of Qualifications} 
 \begin{list2}
-\item {\bf Platforms}: Linux, Windows, OSX and Android
-\item {\bf Languages}: Python, C, C++, Z-Shell, C-Shell, K-Shell, Bash, Perl, FORTRAN, MATLAB, Simulink, Java, Groovy and \LaTeX
-\item {\bf Tools}: Microsoft Office, Microsoft Project, Docker, Vagrant, Jira, Confluence, FishEye, Jenkins, BuildBot, Gerrit, RobotFramework, MATLAB, Simulink, Open Office, Adobe Framemaker, Git, Mercurial, Subversion, ArcGIS Pro, Eclipse, Visual Studio, Numpy, SciPy, Matplotlib, SCons, CMake and Make
-\item {\bf Concepts}: Systems Engineering, Project Management, Issue Management, Configuration Management, Version Control, Build Systems, Modeling and Simulation, Unified Modeling Language (UML), Object Oriented Programming (OOP), Graphical User Interface (GUI) Design, Distributive Programming, Continuous Integration, Peer Review and Embedded Software
-\item {\bf Clearance}: Active Top Secret/SCI
+\item \textbf{Clearance}: Active Top Secret/SCI
+\item \textbf{Platforms}: Linux, Windows, OSX and Android
+\item \textbf{Languages}: Python, C, C++, Perl, FORTRAN, Java, MATLAB, Simulink, Z-Shell, C-Shell, K-Shell, Bash and Groovy
+\item \textbf{Tools}:Visual Studio, Eclipse, CMake, Make, Numpy, SciPy, Matplotlib, Microsoft Office, Microsoft Project,  MATLAB, Simulink, \LaTeX, Docker, Vagrant, Jira, Confluence, FishEye, Jenkins, BuildBot, Gerrit, RobotFramework, Open Office, Git, Mercurial, Subversion, ArcGIS Pro, and  SCons
+\item \textbf{Skills}: Project Schedule Recovery, Team Management, Software Development, Embedded Software, Systems Engineering, Project Management, Issue Management, Agile Development, Configuration Management and Version Control, Build Systems, Modeling and Simulation, Unified Modeling Language (UML), Object Oriented Programming (OOP), Graphical User Interface (GUI) Design and Development, Distributive Programming, Continuous Integration,  and Peer Review
 \end{list2}
+
+\section{\sc Professional Experience}
+\organization{Systems Engineering Group (SEG) Inc.}{Columbia, Maryland USA}
+\role{Manager - Team Leader}{September, 2016 - Present}
+\begin{list2}
+\item Interviewed and hired staff, conducted performance appraisals, staff and strategic planning.
+\item Authored group charter, and defined standard operating procedures (SOP's) for group members.
+\item Integration and improvement of poor quality legacy and external code to meet standards.
+\item Provided support across the organization to assure prototypes and models were easily converted to their target platforms.
+\item Produced and presented schedules, metrics, and team status to management.
+\item Responsible for product packaging, delivery, and quality assurance.
+\item Designed and implemented a solution for embedding dynamic quality verification mechanisms to verify product quality on customer platforms.
+\item Designed and implemented a solution for distributed issue tracking across multiple teams working at multiple isolated development centers.
+\item Managed a team of modeling and simulation engineers supporting modeling and simulation architecture, support tooling, and testing. 
+\item Supported simulation architecture and tooling development utilized in customer HWIL/SWIL test beds.
+\end{list2}
+
+\role{Project Manager - PyMap}{April, 2017 - October, 2017}
+\begin{list2}
+\item Developed a statement of work, use cases, and requirements defining the design and implementation of a scripting module for visualization of geographic information systems.
+\item Managed team of software developers and mentored interns. 
+\item Implemented project standards.
+\end{list2}
+
+\role{Senior Simulation Software Engineer}{January, 2013 - September, 2016}
+\begin{list2}
+\item Managed the design, development and deployment of a system to build, test,package, and deploy enterprise level software products.
+\item Responsible for the design, development and maintenance of 6 Degrees of
+    Freedom (6-DOF) simulations used in threat analysis.
+\item Implemented company wide improvements to knowledge capture infrastructure, quality assurance and artifact management; using Atlassian products including Jira, Confluence, and FishEye.
+\end{list2}
+
+\organization{Honeywell International/Manpower Professional}{Houston, Texas USA}
+\role{Senior Advanced Software Engineer (Orion)}{May, 2011 - December, 2012}
+\begin{list2}
+\item Responsible for the Design and Development of an automated integration test environment.
+\item Authored a suite of custom tools used to track test coverage from use cases, through formal and derived requirements through unit tests.
+\item Launch Recovery Systems Analysis supporting parachute model development.
+\item Navigation Analyst supporting Simulink model refactoring, algorithm reviews, model reviews, white box testing, and responsible for supplying customer support required to realize schedule.
+\item Responsible for navigation systems development support including Coarse Align, Fine Align, Kalman Filtering, Inertial Navigation, Filtered GPS Navigation, and navigation decision control logic.
+\end{list2}
+\role{Senior Advanced Software Engineer (P1000 Autopilot)}{\bf September, 2011 - January, 2012}
+\begin{list2}
+\item Supported engineering analysis and simulink refactoring of the IC-600 Automatic Flight Control System for the Embraer ERJ-145 program.
+\end{list2}
+
+\role{Advanced Software Engineer/Project Manager}{December, 2010 - December, 2012}
+\begin{list2}
+\item Responsible for managing assets, software states and testing metrics for the System Integration Bench (SIB) supporting the Honeywell Ovation Select product line.
+\item Responsible for the generation, execution, and documentation of requirements based test cases on embedded software in support of Brigade Combat Team Modernization (BCTM).
+\item Composed ambiguity and testability analyses specified requirements.
+\item Designed requirements for and developed an automated test framework for black box testing of an embedded target.
+\item Responsible for maintaining a cluster of Linux workstations and associated software dedicated to flight software design and analysis.
+\end{list2}
+
+\organization{Bellock Ventures}{Houston, Texas USA}
+
+\role{Android Application Developer}{October, 2010 - October, 2019}
+\begin{list2}
+\item Published titles on the Android Market include Angle Finder and Angle Finder Pro which currently have over 50,000 users. Receiving Royalties.
+\end{list2}
+
+\organization{United Space Alliance}{Houston, Texas USA}
+
+\role{Antares Simulation Developer}{November, 2009 - October, 2010}
+\begin{list2}
+\item Provided support to the Johnson Space Center Ascent Abort Simulation Team by performing software development and testing support on the Advanced NASA Technology Architecture for Exploration Studies (ANTARES).  ANTARES is NASA's 6-Degree of Freedom (DOF) simulator for Orion.  It is built using the Trick simulation toolkit and developed in C++ for a Linux platform distribution.
+\end{list2}
+\role{Shuttle Abort Software Principle Engineer}{\bf June, 2002 - October, 2010}
+\begin{list2}
+\item Served as the certified Space Shuttle Abort Analysis and Product Design Software PE on the Ascent/Descent Flight Design Software Screening Panel (SSP).
+\item Managed the Equipment Replacement 3\textsuperscript{rd} Generation (ER3) Project for two year Space Shuttle Abort Analysis and Product Design Suite; transitioning the  suite from AIX to Linux.   This project was completed three months ahead of schedule.
+\item Responsible for process improvement initiatives including improving the turn-around time required for the Space Shuttle Abort discipline software life cycle, automating configuration management software handover procedures. Prepared and maintained integration metrics across flight design working groups.
+\item Managed the three year Abort Design Environment re-invention project,  to streamline the operations software suite for Shuttle abort design in support of Just in Time Flight Design (JITFD).
+\item Responsible for 3-DOF and 6-DOF simulation tool maintenance and authoring of custom analysis software tools used with simulators to design and verify Space Shuttle ascent trajectories.
+\end{list2}
+
+\organization{TransDimensional Entertainment Inc.}{Houston, Texas USA}
+
+\role{Lead Game Designer}{January, 2001 - September, 2004}
+\begin{list2}
+\item Designed and developed an original physics engine, for Xbox; in C++ utilizing real time accurate collision detection, multi-body dynamics, and inverse kinematics systems for character animation.
+\end{list2}
+
+
+\section{\sc Education}
+
+\organization{Johns Hopkins University}{Baltimore, Maryland USA}
+\begin{list1}
+  \item[] M.S., Geographic Information Systems, Expected Graduation May, 2020 \hfill GPA 4.0
+\end{list1}
+
+\organization{The Pennsylvania State University}{University Park, Pennsylvania USA}
+\begin{list1}
+  \item[] B.S., Physics, August, 2000
+  \item[] B.S., Mathematics, August, 2000
+  \begin{list2}\vspace*{.05in}
+\item President National Honors Society of Physics Students Chapter - Sigma Pi Sigma ($\Sigma\Pi\Sigma$).
+  \end{list2}\vspace*{.05in}
+\end{list1}
+
+\organization{Harrisburg Area Community College}{Harrisburg, Pennsylvania USA}
+\begin{list1}
+  \item[] A.S., Physics and Science Education,  May, 1997
+\end{list1}
 
 \section{\sc Published Open Source Projects}
 {\bf alphashape}\hfill\url{https://pypi.org/project/alphashape}
@@ -64,156 +177,14 @@ Gambrills, Maryland 21054 & {\it E-mail:}  ken@bellock.net\\
 {\bf amtool}\hfill\url{https://pypi.org/project/amtool}
 
 \begin{list2}
-\item A pre-alpha toobox and command line interface for working with artifact trees.
-\item Intended applications include distributed issue tracking and systems engineering.
+	\item A pre-alpha toobox and command line interface for working with artifact trees for distributed issue tracking and systems engineering.
 \end{list2}
 
 {\bf RADStack}\hfill\url{https://github.com/bellockk/RADStack}
 
 \begin{list2}
-\item A full stack of web based tools to aid in Research and Development projects/teams, including the ability to make/restore backups, and cleanly remove itself from the host server. It is intended to scale from one researcher/developer to large teams developing multiple projects. Built with Docker, the research and development stack includes an LDAP server, continuous integration, peer review, and issue tracking services.
+	\item A full set of scalable web based tools to aid in Research and Development , including the ability to make/restore backups, and cleanly remove itself from the host server. The suite includes an LDAP server, continuous integration, peer review, and issue tracking services.
 \end{list2}
-
-\section{\sc Professional Experience}
-{\bf Systems Engineering Group (SEG) Inc.}, Columbia, Maryland USA
-
-\vspace{-.3cm}
-{\em Manager - Modeling and Simulation} \hfill {\bf January, 2019 - Present} \vspace*{.05in}
-\begin{list2}
-\item Authored group charter, and defined standard operating proceedures (SOP's) for group members.
-\item Conducted performance appraisals, staff planning, and stragic planning.
-\end{list2}
-
-{\em Integrated Product Team Lead (IPTL)} \hfill {\bf September, 2016 - December, 2018} \vspace*{.05in}
-\begin{list2}
-\item Produced and presented schedules, metrics, and team status to the project and program managers during bi-weekly leads meetings.
-\item Responsible for product packaging, delivery, and quality assurance.
-\item Designed and implemented a solution for embedding dynamic quality assurance mechanisms on deliverables to evaluate product quality on customer platforms.
-\item Designed and implemented a solution for distributed issue tracking across teams working at multiple isolated development centers.
-\item Managed a team of modeling and simulation engineers supporting modeling and simulation architecture, support tooling, and testing. 
-\item Supported simulation architecture and tooling for threat characterization packages utilized in test beds and in support of threat analysis and engineering.
-\end{list2}
-{\em Project Manager - PyMap} \hfill {\bf April, 2017 - October, 2017} \vspace*{.05in}
-\begin{list2}
-\item Developed a statement of work, use cases, and requirements defining the design and implementation of a scripting module for visualization of geographic information systems supporting threat engineering.
-\item Managed team of software developers and interns supporting development, test, documentation, and deployment.
-\item Implemented version control, configuration management, and quality assurance of product deliverables, documentation, and source code.
-\end{list2}
-{\em Senior Simulation Software Engineer} \hfill {\bf January, 2013 - September, 2016} \vspace*{.05in}
-\begin{list2}
-\item Responsible for the design and development of a system to build, test,
-    package, and deploy enterprise level software products.
-\item Responsible for the design, development and maintenance of 6 Degrees of
-    Freedom (DOF) simulations used in threat analysis supporting United States
-    Missile Defense Agency interests.
-\item Managed resources and project schedules to support on time, error free
-    product deliveries.
-\item Implemented company wide improvements to knowledge capture infrastructure, quality assurance and artifact management.
-\item Deployed company wide services of Atlassian products including Jira, Confluence, and FishEye.
-\end{list2}
-{\bf Honeywell International/Manpower Professional}, Houston, Texas USA
-
-\vspace{-.3cm}
-{\em Senior Advanced Software Engineer (Orion - Test)} \hfill {\bf February, 2012 - December, 2012} \vspace*{.05in}
-\begin{list2}
-\item Responsible for the Design and Development of an automated integration test environment.
-\item Authored a suite of custom tools used to track test coverage from use cases, through formal requirements, down to derived design requirements, and their unit tests. 
-\end{list2}
-{\em Senior Advanced Software Engineer (Orion - Entry Mode Team)} \hfill {\bf May, 2012 - August, 2012} \vspace*{.05in} 
-\begin{list2}
-\item Launch Recovery Systems Analyst supporting parachute model development and analysis.
-\end{list2}
-{\em Senior Advanced Software Engineer (Orion - Navigation)} \hfill {\bf May, 2011 - December, 2012}
-\vspace*{.05in}
-\begin{list2}
-\item Navigation Analyst supporting Simulink model refactoring, algorithm reviews, model reviews, white box testing, and responsible for supplying customer support required to realize scheduled baseline release dates.
-\item Responsible for navigation systems development support including Coarse Align, Fine Align, Kalman Filtering, Inertial Navigation, Filtered GPS Navigation, and navigation decision control logic.
-\end{list2}
-{\em Senior Advanced Software Engineer (P1000 Autopilot)} \hfill {\bf September, 2011 - January, 2012}
-\vspace*{.05in}
-\begin{list2}
-\item Supported engineering analysis and simulink refactoring of the IC-600 Automatic Flight Control System for the Embraer ERJ-145 program.
-\end{list2}
-{\em Linux System Administrator} \hfill {\bf June, 2011 - December, 2012}
-\vspace*{.05in}
-\begin{list2}
-\item Responsible for maintaining a cluster of Linux workstations dedicated to flight software design and analysis.  This included system maintenance, troubleshooting, and performing baseline builds of simulation software.
-\end{list2}
-{\em Project Manager} \hfill {\bf April, 2011 - June, 2011}
-\vspace*{.05in}
-\begin{list2}
-\item Responsible for managing assets, software states and testing metrics for the System Integration Bench (SIB) supporting the Honeywell Ovation Select product line.
-\end{list2}
-{\em Senior Advanced Software Engineer (Military Contract)} \hfill {\bf December, 2010 - April, 2011} \vspace*{.05in}
-\begin{list2}
-\item Responsible for the generation, execution, and documentation of requirements based test cases on embedded software in support of Brigade Combat Team Modernization (BCTM).
-\item Composed ambiguity and testability analyses on assigned functional areas of the project's software requirements specification.
-\item Designed requirements for and developed an automated test framework for black box testing of an embedded software target.
-\end{list2}
-{\bf Bellock Ventures}, Houston, Texas USA
-
-\vspace{-.4cm}
-{\em Android Application Developer} \hfill {\bf October, 2010 - Present}
-\vspace*{.05in}
-\begin{list2}
-\item Published titles on the Android Market include Angle Finder and Angle Finder Pro.
-\item Currently over 50,000 users of the Angle Finder Android application.
-\end{list2}
-{\bf United Space Alliance}, Houston, Texas USA
-
-\vspace{-.4cm}
-{\em Antares Simulation Developer} \hfill {\bf November, 2009 - October, 2010}
-\vspace*{.05in}
-\begin{list2}
-\item Provided support to the Johnson Space Center Ascent Abort Simulation Team by performing software development and testing support on the Advanced NASA Technology Architecture for Exploration Studies (ANTARES).  ANTARES is NASA's 6-Degree of Freedom (DOF) simulator for Orion.  It is built using the Trick simulation toolkit and developed in C++ for a Linux platform distribution.
-\end{list2}
-{\em Shuttle Abort Software Principle Engineer} \hfill {\bf June, 2002 - October, 2010}
-\vspace*{.05in}
-\begin{list2}
-\item Served as the certified Space Shuttle Abort Analysis and Product Design Software PE on the Ascent/Descent Flight Design Software Screening Panel (SSP).
-\item Managed the Equipment Replacement 3\textsuperscript{rd} Generation (ER3) Project for Space Shuttle Abort Analysis and Product Design Software Suite.  This project encompassed the scheduling, documentation, coding, and testing necessary to transition the software suite from an AIX to a Linux platform.  This was a two year project that was completed three months ahead of schedule.
-\item Responsible for process improvement initiatives including improving the turn-around time required for the Space Shuttle Abort discipline software lifecycle, automating configuration management software handover procedures, and by preparing and maintaining software integration metrics across flight design working groups.
-\item Managed the Abort Design Environment re-invention project, a three year effort to streamline the operations software suite for Shuttle abort design in support of Just in Time Flight Design (JITFD).
-\item Responsible for 3-DOF and 6-DOF simulation tool maintenance and the authoring of custom analysis software tools which interfaced with these simulators to design and verify Space Shuttle ascent trajectories in support of Guidance, Navigation, and Control.
-\end{list2}
-{\bf TransDimensional Entertainment Inc.}, Houston, Texas USA
-
-\vspace{-.4cm}
-{\em Lead Game Designer} \hfill {\bf January, 2001 - September, 2004}
-\vspace*{.05in}
-\begin{list2}
-\item Designed and developed an entirely original physics engine in C++ utilizing real time accurate collision detection, multi-body dynamics, and inverse kinematics systems for character animation for the Microsoft Xbox platform.
-\end{list2}
-
-
-\section{\sc Education}
-{\bf Johns Hopkins University}, Baltimore, Maryland USA\\
-\vspace*{-.1in}
-\begin{list1}
-\item[] M.S., Geographic Information Systems, Expected Graduation May, 2020
-\begin{list2}
-\vspace*{.05in}
-\item GPA 4.0
-\end{list2}
-\vspace*{.05in}
-\end{list1}
-{\bf The Pennsylvania State University}, University Park, Pennsylvania USA\\
-\vspace*{-.1in}
-\begin{list1}
-\item[] B.S., Physics, August, 2000
-\item[] B.S., Mathematics, August, 2000
-\begin{list2}
-\vspace*{.05in}
-\item President of The Pennsylvania State University Chapter of Sigma Pi Sigma ($\Sigma\Pi\Sigma$), The National Honors Society of Physics Students.
-\end{list2}
-\vspace*{.05in}
-\end{list1}
-
-{\bf Harrisburg Area Community College}, Harrisburg, Pennsylvania USA\\
-\vspace*{-.1in}
-\begin{list1}
-\item[] A.S., Physics and Science Education,  May, 1997
-\end{list1}
 
 
 \end{resume}
