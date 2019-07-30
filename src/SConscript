@@ -1,4 +1,4 @@
 Import('env')
 pdf = env.PDF('document.tex')
-install = env.InstallAs('curriculum_vitae.pdf', pdf)
+install = env.InstallAs('KennethBellock-Resume.pdf', pdf)
 Return('install')
